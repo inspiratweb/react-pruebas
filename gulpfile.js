@@ -19,9 +19,9 @@ var react = require('gulp-react');
 // File paths to various assets are defined here.
 var PATHS = {
   javascript: [
-    "js/vendors/react.min.js",
-    "js/vendors/react-dom.min.js",
-    "js/vendors/babel.min.js",
+    // "js/vendors/react.min.js",
+    // "js/vendors/react-dom.min.js",
+    // "js/vendors/babel.min.js",
     "js/components.js"
   ]
 };
@@ -113,5 +113,5 @@ gulp.task('default', ['sass', 'haml', 'react', 'connect'], function() {
   // Watch Files For Changes
   gulp.watch('sass/**/*.sass', ['sass']);
   gulp.watch('haml/**/*.haml', ['haml']);
-  gulp.watch('js/**/*.js', ['js']);
+  gulp.watch('js/**/*.js', ['react']);
 });
